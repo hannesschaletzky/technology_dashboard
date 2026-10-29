@@ -1,0 +1,33 @@
+name: Neues Thema
+description: Vorschlag für eine neue interaktive Erklärung.
+labels: ["new-topic"]
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: Thema
+    validations:
+      required: true
+  - type: textarea
+    id: goals
+    attributes:
+      label: Lernziele
+      description: Was soll man nach der Seite verstanden haben? (3–5 Punkte)
+    validations:
+      required: true
+  - type: textarea
+    id: demo
+    attributes:
+      label: Idee für die Interaktion
+  - type: textarea
+    id: sources
+    attributes:
+      label: Quellen
+      description: Mindestens eine Primärquelle.
+  - type: checkboxes
+    id: role
+    attributes:
+      label: Ich möchte …
+      options:
+        - label: das Thema selbst umsetzen
+        - label: fachlich gegenlesen

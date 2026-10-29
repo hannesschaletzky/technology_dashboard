@@ -1,0 +1,31 @@
+name: Fachlicher Fehler
+description: Eine Aussage oder Darstellung ist falsch oder irreführend.
+labels: ["fact-check"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Seite / Thema
+      placeholder: z. B. /tech/blockchain, Schritt 2
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: Was steht dort?
+      description: Zitat oder Beschreibung der Darstellung.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Was ist richtig?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Quelle(n)
+      description: Bitte möglichst Primärquellen (Paper, Standard, Fachbuch mit Seitenangabe).
+    validations:
+      required: true
